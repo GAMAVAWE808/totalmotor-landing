@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400&display=swap');
+body{
+  font-family: 'Sora', sans-serif;
+}
+.color-totalmotor{
+    color: #DAA520;
+}
+.h-100vh{
+    height: 100vh;
+}
+nav{
+    padding: 30px 0;
+}
+.logo{
+    height: 84px;
+width: 223px;
+left: 94px;
+top: 45px;
+border-radius: 0px;
+
+}
+.bg-negroTM{
+  background-color: #1D1D1D;
+  background-image: url('@/static/images/motor.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+}
+.motores{
+    font-size: 5rem;
+    line-height: 87px;
+    color: white;
+    letter-spacing: 12%;
+letter-spacing: 0.12em;
+text-align: left;
+}
+.expertos{
+
+
+font-size: 7rem;
+letter-spacing: 12%;
+font-style: normal;
+font-weight: 400;
+line-height: 87px;
+text-align: left;
+
+
+
+
+color: black;
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+
+}
+.boton1{
+
+
+
+background: #DAA520;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35), 4px 4px 5px rgba(181, 165, 126, 0.35);
+}
+.boton2{
+    color: #DAA520;
+    background-color: transparent;
+    border: 1px solid #DAA520;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35), 4px 4px 5px rgba(181, 165, 126, 0.35);
+}
+.lista{
+    height: 100vh;
+    display: flex;
+}
+.lista-div{
+    padding-left:10rem ;
+}
+.lista-ul{
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 25px;
+    text-align: left;
+    list-style: none;
+}
+.lista-ul  li{
+    margin: 40px 0;
+
+}
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #DAA520; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+.text-lista{
+    color: #DAA520;
+    font-weight: 600;
+}
+.stroke-text{
+    color: black;
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #DAA520;
+}
+.h-50vh{
+    height: 50vh;
+}
+.texto-problema-motor{
+    line-height: 30px;
+    letter-spacing: 0.055em;
+}
+.logo-blanco-text{
+    margin: 75px auto;
+}
+.seccion-negra{
+    background-color: #1D1D1D;
+}
+.iconos-cont p{
+    letter-spacing: 0.055em;
+    color: #ffff;
+    font-weight: 100;
+    font-size: 18px;
+line-height: 21px;
+}
