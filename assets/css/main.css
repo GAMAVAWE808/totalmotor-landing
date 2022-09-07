@@ -5,6 +5,9 @@ body{
 .color-totalmotor{
     color: #DAA520;
 }
+.border-tm{
+    border-color: #DAA520;
+}
 .h-100vh{
     height: 100vh;
 }
@@ -54,6 +57,7 @@ color: black;
   -webkit-text-stroke-color: white;
 
 }
+
 .boton1{
 
 
@@ -78,7 +82,8 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35), 4px 4px 5px rgba(181, 165, 126, 0.3
     display: flex;
     align-items: center;
     font-weight: 300;
-    font-size: 25px;
+    font-size: 1.5rem;
+    white-space: normal;
     text-align: left;
     list-style: none;
 }
@@ -86,7 +91,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35), 4px 4px 5px rgba(181, 165, 126, 0.3
     margin: 40px 0;
 
 }
-ul li::before {
+.lista-ul ul li::before {
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
   color: #DAA520; /* Change the color */
   font-weight: bold; /* If you want it to be bold */
@@ -123,4 +128,208 @@ ul li::before {
     font-weight: 100;
     font-size: 18px;
 line-height: 21px;
+
+}
+.iconos-cont{
+
+  transition: transform .5s ease-in-out;
+
+
+}
+.iconos-cont:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.align-cajas{
+    padding: 0 100px;
+}
+.cuadro{
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    margin: 20px 10px;
+}
+.cuadro img{
+    width: 100%;
+    height: 100%;
+}
+.garantia-extendida{
+    font-weight: 600;
+    letter-spacing: 0.045em;
+font-style: normal;
+font-size: 38px;
+line-height: 58px;
+width: 85%;
+padding: 0 20px;
+height: 200px;
+margin: 100px auto;
+background:  radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(218, 165, 32, 0.2) 0%, rgba(226, 226, 226, 0.2) 77.08%, rgba(0, 0, 0, 0.2) 100%);
+background-blend-mode: overlay, normal;
+border: 3px solid #E9E9E9;
+box-sizing: border-box;
+backdrop-filter: blur(80px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 5px;
+}
+.boton-contacto{
+    margin: 0 auto;
+    width: 300px;
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+height: 60px;
+background-color: #DAA520;
+}
+.cuadro{
+
+  transition: transform .5s ease-in-out;
+
+
+}
+.cuadro:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.bg-totalmotorA{
+    background-color: #DAA520;
+}
+.bg-totalmotorB{
+    background-color: #1D1D1D;
+}
+.VueCarousel-dot[data-v-438fd353]:focus{
+    outline: none !important;
+}
+.cuadro-testimonio{
+    width: 70%;
+    height: 400px;
+    background:  radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(218, 165, 32, 0.2) 0%, rgba(226, 226, 226, 0.2) 77.08%, rgba(0, 0, 0, 0.2) 100%);
+background-blend-mode: overlay, normal;
+border: 3px solid #E9E9E9;
+box-sizing: border-box;
+backdrop-filter: blur(80px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 5px;
+}
+.cuadro-testimonio img{
+    width: 200px;
+    height: 200px;
+}
+.imagen-footer{
+    border-right: 3px solid #DAA520;
+
+}
+.redes{
+    width: 2rem;
+    height: 2rem;
+}
+.menu-footer{
+    color: #DAA520;
+    font-size: 12px;
+}
+.creditos{
+    border-top: 1px solid white;
+}
+.cuadro-motores {
+    padding: 20px;
+    background: radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(218, 165, 32, 0.2) 0%, rgba(226, 226, 226, 0.2) 77.08%, rgba(0, 0, 0, 0.2) 100%);
+    background-blend-mode: overlay, normal;
+    border: 3px solid #E9E9E9;
+    box-sizing: border-box;
+    -webkit-backdrop-filter: blur(80px);
+    backdrop-filter: blur(80px);
+    border-radius: 5px;
+}
+.cuadro-motores img{
+    max-width: 400px;
+}
+@media screen and (max-width:900px){
+    .cuadro-motores img{
+    max-width: 300px;
+}
+    .expertos{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .motores{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .lista-div{
+    padding-left:0rem ;
+    }
+    .lista-ul{
+        align-items: center;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .lista-ul  li{
+        margin: 40px 0;
+
+    }
+    .garantia-extendida{
+    font-size: 1.7rem;
+    line-height: 3rem;
+    width: 100%;
+    padding: 0 20px;
+    height: 60vh;
+    margin: 0;
+    margin-bottom: 10vh;
+    }
+    .cuadro{
+        width: auto;
+        height: auto;
+        margin: 13px 46px;
+    }
+    .cuadro-testimonio{
+    width: 100%;
+    height: 500px;
+    border: 1px solid #E9E9E9;
+
+    }
+    .imagen-footer{
+    border-right: none;
+    border-bottom: 3px solid #DAA520;
+
+    }
+}
+
+.logotel{
+    filter: invert(93%) sepia(18%) saturate(6852%) hue-rotate(342deg) brightness(89%) contrast(91%);
+}
+.botonWhats{
+	position: fixed;
+	z-index: 9999999;
+	bottom: 105px;
+	right: 20px;
+	width: 4.1rem;
+	text-align: center;
+	font-size: 12px;
+	cursor: pointer;
+	padding-top: 0px;
+	transition: all 0.3s ease-in-out;
+}
+.texto-contactanos{
+	position: fixed;
+	right: 0;
+	bottom: 190px;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	background-color: #DAA520;
+	width: auto;
+}
+.boton-telefono{
+	position: fixed;
+	z-index: 9999999;
+	bottom: 20px;
+	right: 20px;
+	width: 4.1rem;
+	text-align: center;
+	font-size: 12px;
+	cursor: pointer;
+	padding-top: 0px;
+	transition: all 0.3s ease-in-out;
 }
