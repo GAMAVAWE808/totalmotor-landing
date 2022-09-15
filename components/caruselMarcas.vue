@@ -31,6 +31,12 @@
             <slide>
                 <div class="cuadro"><img src="@/static/images/marcas/Mercedes.png" alt=""></div>
             </slide>
+            <slide>
+                <div class="cuadro"><img src="@/static/images/marcas/GMC.png" alt=""></div>
+            </slide>
+            <slide>
+                <div class="cuadro"><img src="@/static/images/marcas/GMC.png" alt=""></div>
+            </slide>
         </carousel>
     </div>
 </template>

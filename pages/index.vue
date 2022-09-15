@@ -19,10 +19,13 @@
 </template>
 <script>
 export default {
-  head(){
-        return{
-            title:"Total Motor SC"
-        }
+    head() {
+        return {
+            title: "Total Motor SC",
+            script: [
+                { hid: "recaptcha", src: "https://www.google.com/recaptcha/api.js" }
+            ]
+        };
     },
 }
 </script>

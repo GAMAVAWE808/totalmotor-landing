@@ -14,6 +14,8 @@
                 <div class="cuadro"><img src="@/static/images/marcas/Ford.png" alt=""></div>
                 <div class="cuadro"><img src="@/static/images/marcas/Jeep.png" alt=""></div>
                 <div class="cuadro"><img src="@/static/images/marcas/Mercedes.png" alt=""></div>
+                <div class="cuadro"><img src="@/static/images/marcas/GMC.png" alt=""></div>
+                <div class="cuadro"><img src="@/static/images/marcas/LandRover.png" alt=""></div>
             </div>
         </div>
     </div>

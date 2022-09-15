@@ -37,6 +37,9 @@
                 
                 </div>
                 <div  class="flex flex-col text-center justify-center self-center">
+                    <!-- <div class="g-recaptcha" 
+        data-sitekey="6LfZj_0hAAAAAIyclPpRj0TAqThiZFqbsScVKUAp" 
+       ></div> -->
                     <button :disabled="disabled" @click="performPostRequest"  class="h-10 w-40 bg-totalmotorA hover:bg-gray-800 text-white hover:text-yellow-600 disabled:opacity-50">Enviar</button>
                     
                     <span :class="['text-red-600',{'hidden': !camposVacios}]">Faltan campos por llenar</span>
@@ -49,96 +52,83 @@
 </template>
 <script>
 export default {
-
     data() {
         return {
-            disabled:false,
-            camposVacios:false,
-            nombre:{text:'',lleno:true},
-            apellido:{text:'',lleno:true},
-            marca:{text:'',lleno:true},
-            telefono:{text:'',lleno:true},
-            email:{text:'',lleno:true},
-            mensaje:{text:'',lleno:true}
-        }
+            disabled: false,
+            camposVacios: false,
+            nombre: { text: "", lleno: true },
+            apellido: { text: "", lleno: true },
+            marca: { text: "", lleno: true },
+            telefono: { text: "", lleno: true },
+            email: { text: "", lleno: true },
+            mensaje: { text: "", lleno: true }
+        };
     },
-    computed:{
-
-    },
+    computed: {},
     methods: {
-        validarTelefono(){
-            this.telefono.text = this.telefono.text.replace(/[^0-9]/g, '');
+        validarTelefono() {
+            this.telefono.text = this.telefono.text.replace(/[^0-9]/g, "");
         },
-        validarCampos(nombre,email,telefono,apellido,mensaje,marca){
-        if (!nombre || !apellido || !telefono || !email || !mensaje || !marca) {
-        return false;
-        }
-        else {
-        return true;
-        }
-        },
-        validarCampo(e,correo){
-            if(!e.text){
-                e.lleno = false;
-
-            }
-            else{
-                e.lleno = true;
-            }
-            if(correo === true){
-           
-                if (/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(e.text)) {
-                    
-            this.disabled = false;
-            e.lleno = true;
+        validarCampos(nombre, email, telefono, apellido, mensaje, marca) {
+            if (!nombre || !apellido || !telefono || !email || !mensaje || !marca) {
+                return false;
             }
             else {
-                
-            e.lleno = false;
-            this.disabled = true;
+                return true;
             }
+        },
+        validarCampo(e, correo) {
+            if (!e.text) {
+                e.lleno = false;
+            }
+            else {
+                e.lleno = true;
+            }
+            if (correo === true) {
+                if (/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(e.text)) {
+                    this.disabled = false;
+                    e.lleno = true;
+                }
+                else {
+                    e.lleno = false;
+                    this.disabled = true;
+                }
             }
         },
         
-        performPostRequest(){
-            if(this.validarCampos(this.nombre.text,this.email.text, this.telefono.text, this.apellido.text, this.mensaje.text ,this.marca.text)=== true){
+        performPostRequest() {
+            
+            if (this.validarCampos(this.nombre.text, this.email.text, this.telefono.text, this.apellido.text, this.mensaje.text, this.marca.text) === true) {
                 this.camposVacios = false;
-                
-                this.$axios.post('https://correo.totalmotorsc.com',{
+                this.$axios.post("https://correo.totalmotorsc.com", {
                     nombre: this.nombre.text,
                     telefono: this.telefono.text,
                     correo: this.email.text,
                     apellido: this.apellido.text,
                     marca: this.marca.text,
                     mensaje: this.mensaje.text
-                    
                 })
-                .then(response=>{
-                    this.nombre.text ="";
-                    this.telefono.text ="";
+                    .then(response => {
+                    this.nombre.text = "";
+                    this.telefono.text = "";
                     this.email.text = "";
                     this.marca.text = "";
-                    this.apellido.text ="";
+                    this.apellido.text = "";
                     this.mensaje.text = "";
-                    this.$swal(
-                {
-                    icon:'success',
-                    title:'Envio Exitoso'
-                }
-            )
-
+                    this.$swal({
+                        icon: "success",
+                        title: "Envio Exitoso"
+                    });
                 })
-                .catch(function(error){
-                    console.log(error)
-
+                    .catch(function (error) {
+                    console.log(error);
                 });
             }
-            else{
+            else {
                 this.camposVacios = true;
             }
         }
     },
-    
 }
 </script>
 <style>

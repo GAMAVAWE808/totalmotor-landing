@@ -5,7 +5,7 @@
 		
     	<div class="botonWhats">	
   			<div>
-      			<a href="https://wa.me/523331813949?text=Hola.%20Me%20gustaría%20obtener%20más%20información%20sobre%20sus%20servicios."
+      			<a href="https://wa.me/523334886681?text=Hola.%20Me%20gustaría%20obtener%20más%20información%20sobre%20sus%20servicios."
           			target="_blank"><img class="logoWhats" src="@/static/images/Whatsapp.svg" alt="whatsapp"
               		title="Conctactanos"></a>
   			</div>
