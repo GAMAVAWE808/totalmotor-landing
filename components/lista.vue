@@ -1,5 +1,6 @@
 <template>
-    <div id="soluciones" class="w-full px-10 py-20 lg:px-0 lista flex-col text-center">
+    <div class="seccion-lista">
+        <div id="soluciones" class="w-full px-10 py-20 lg:px-0 lista flex-col text-center">
         <h1 class="text-lista  text-2xl lg:text-5xl">
             <span class="stroke-text">¿</span>
             <!-- TE ESTA PASANDO LO SIGUIENTE -->
@@ -19,6 +20,7 @@
                 </ul>
             </div>
         </div>
+    </div>
     </div>
 </template>
 <style>

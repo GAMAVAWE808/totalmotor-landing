@@ -26,7 +26,7 @@
   <slide>
     <div class="flex justify-center mx-auto">
         <div class="cuadro-motores space-y-10 lg:space-y-0 flex flex-col lg:flex-row items-center justify-center">
-            <img style="heigth:100%" src="@/static/images/motores/4.jpeg" alt="">
+            <img style="heigth:100%" src="@/static/images/motores/13.jpeg" alt="">
         </div>
     </div>
   </slide>

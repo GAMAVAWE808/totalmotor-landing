@@ -1,6 +1,6 @@
 <template>
     
-    <div class="w-screen h-screen">
+    <div class="h-screen">
   <Navbar/>
   <Banner/>
   <Lista/>

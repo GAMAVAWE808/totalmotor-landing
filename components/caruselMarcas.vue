@@ -35,7 +35,7 @@
                 <div class="cuadro"><img src="@/static/images/marcas/GMC.png" alt=""></div>
             </slide>
             <slide>
-                <div class="cuadro"><img src="@/static/images/marcas/GMC.png" alt=""></div>
+                <div class="cuadro"><img src="@/static/images/marcas/LandRover.png" alt=""></div>
             </slide>
         </carousel>
     </div>
