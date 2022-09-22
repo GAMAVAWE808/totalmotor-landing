@@ -17,12 +17,12 @@
                 Soluciones
             </a>
         </div>
-        <div class="w-full lg:hidden lg:w-auto flex flex-col lg:flex-row mb-0">
+        <div class="w-full px-20 lg:hidden lg:w-auto flex flex-col lg:flex-row mb-0">
             <h1 class=" subtexto">Venta de motores y piezas de motor a nivel nacional</h1>
         </div>
         
         </div>
-        <div class="hidden lg:block w-auto h-full">
+        <div class="hidden px-20 lg:flex items-center w-auto h-full">
             <h1 class=" subtexto">Venta de motores y piezas de motor a nivel nacional</h1>
         </div>
     </div>

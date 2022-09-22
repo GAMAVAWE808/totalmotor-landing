@@ -8,8 +8,8 @@
             <div class="testimonio-img" >
                 <img class="lg:mx-20 " src="@/static/images/testimonios/motortestimonio1.jpeg" alt=""></img>
             </div>
-            <div class="lg:mx-20 px-10 lg:px-0 text-sm lg:text-xl text-white space-y-10 text-center flex flex-col">
-                <span class="font-light">“Muy buen servicio, recibí la atención de los muchachos durante todo el proceso y en el tiempo acordado. Buena experiencia ”</span>
+            <div class="lg:mx-20 px-10 lg:px-20 w-10/12 text-sm lg:text-xl text-white space-y-10 text-center flex flex-col">
+                <span class="font-light">“Muy buen servicio, recibí la atención de los muchachos durante todo el proceso y en el tiempo acordado. Buena experiencia.”</span>
                 <span><strong>Rúben</strong></span>
             </div>
         </div>
@@ -21,8 +21,8 @@
             <div class="testimonio-img">
                 <img class="lg:mx-20" src="@/static/images/testimonios/motortestimonio2.jpeg" alt=""></img>
             </div>
-            <div class="lg:mx-20 px-10 lg:px-0 text-sm lg:text-xl text-white space-y-10 text-center flex flex-col">
-                <span class="font-light">“Queria arreglar un problema de mi Mustang, ni la agencia pudo, pero gracias al equipo de TOTAL MOTOR mi vehiculo volvio a vivir”</span>
+            <div class="lg:mx-20 px-10 lg:px-20 text-sm lg:text-xl w-10/12 text-white space-y-10 text-center flex flex-col">
+                <span class="font-light">“Necesitaba reparar mi camioneta, en la agencia estaba carisimo, pero no quería deshacerme de mi Lincoln, jamas volví a tener problemas, excelente trabajo.”</span>
                 <span><strong>Ing. Victor Gutierrez</strong></span>
             </div>
         </div>
@@ -34,9 +34,9 @@
             <div class="testimonio-img">
                 <img class="lg:mx-20 " src="@/static/images/testimonios/motortestimonio3.jpeg" alt="">
             </div>
-            <div class="lg:mx-20 px-10 lg:px-0 text-sm lg:text-md text-white space-y-10 text-center flex flex-col">
-                <span class="font-light">“Te dan soluciones no mas problemas, quedé satisfecho con la reparación de mi motor, fui bien asesorado desde el comienzo puesto que yo buscaba motor usado a cambio y no sabia que tenia arreglo mi camioneta.”</span>
-                <span><strong>Manuel</strong></span>
+            <div class="lg:mx-20 px-10 lg:px-20 text-sm lg:text-xl w-10/12 text-white space-y-4 lg:space-y-10 text-center flex flex-col">
+                <span class="font-light">“Te dan soluciones no mas problemas, quedé enteramente satisfecho con la reparación, me convencieron de reparar mi motor antes de comprar uno nuevo y no me arrepiento.”</span>
+                <span ><strong>Manuel</strong></span>
             </div>
         </div>
     </div>
