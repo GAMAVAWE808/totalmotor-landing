@@ -1,9 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,500&display=swap');
 body{
   font-family: 'Sora', sans-serif;
 }
 .color-totalmotor{
     color: #DAA520;
+}
+.fondo-banderas{
+    width: 28vw;
+    height: 12vw;
+    white-space: unset;
+    position: absolute;
+    text-align: center;
+    bottom: 10%;
+    right: 10%;
+    text-transform: uppercase;
+
+}
+.banderas{
+    width: 22vw;
+    left: 10%;
 }
 .border-tm{
     border-color: #DAA520;
@@ -31,18 +47,35 @@ border-radius: 0px;
 
 }
 .subtexto{
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: white;
-    margin-left: -60px;
-    margin-bottom: 50px;
-    text-align: center;
-    margin-top: 10%;
+    left: 10%;
+    top: 15%;
+    font-size: 1.5vw;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
     color: black;
-  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-fill-color: #DAA520; 
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #DAA520;
+  -webkit-text-stroke-color: white; 
+
 }
+/* .subtexto{
+    top: 15%;
+    font-size: 1.5vw;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+        color: #DAA520;
+        text-shadow:
+          0 0 2px #fff,
+          0 0 7px #fff,
+          0 0 10px #fff,
+          0 0 21px #DAA520,
+          0 0 20px #DAA520,
+          0 0 41px #DAA520,
+          0 0 68px #DAA520,
+          0 0 92px #DAA520;
+      
+} */
+
 .motores{
     font-size: 5rem;
     line-height: 87px;
@@ -114,8 +147,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35), 4px 4px 5px rgba(181, 165, 126, 0.3
     font-weight: 300;
     font-size: 1rem;
     white-space: normal;
-    text-align: left;
-    list-style: none;
+    text-align: left;;
 }
 
 .lista-ul  li{
@@ -136,7 +168,6 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35), 4px 4px 5px rgba(181, 165, 126, 0.3
     width: 1em; /* Also needed for space (tweak if needed) */
     margin-left: -1em; /* Also needed for space (tweak if needed) */
   }
-
 .stroke-text{
     color: black;
   -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
@@ -293,10 +324,28 @@ border-radius: 5px;
 .cuadro-motores img{
     max-width: 400px;
 }
-
-@media screen and (max-width:900px){
+@media screen and (min-width:700px) and (max-width:1000px){
+    .botones{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width:700px){
+    
     .cuadro-motores img{
     max-width: 300px;
+}
+.fondo-banderas{
+    width: 22rem;
+    background-size: cover;
+    left: 5%;
+    background-position: center;
+    top: 80%;
+
+}
+.banderas{
+    width: 80%;
 }
 .cuadro-motor{
     width: auto;
@@ -318,11 +367,9 @@ border-radius: 5px;
 }
 .subtexto{
     display: flex;
-    position: unset;
-    margin-left: 0;
-    margin-bottom: 0;
-    padding-top: 20%;
-    font-size: 15px;
+    font-size: 1rem;
+    padding: 1.5rem 22px;
+    z-index: 0;
 
 }
     .expertos{
@@ -335,6 +382,7 @@ border-radius: 5px;
     }
     .lista-div{
     padding-left:0rem ;
+    z-index: 0;
     }
     .lista-ul{
         align-items: center;

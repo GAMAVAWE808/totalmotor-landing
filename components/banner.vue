@@ -17,15 +17,28 @@
                 Soluciones
             </a>
         </div>
-        <div class="w-full px-20 lg:hidden lg:w-auto flex flex-col lg:flex-row mb-0">
-            <h1 class=" subtexto">Venta de motores y piezas de motor a nivel nacional</h1>
+        <div class="text-center w-screen">
+            <div class="w-full h-auto text-center justify-center items-center pt-10 lg:hidden lg:w-auto relative ">
+            <div class="fondo-banderas">
+                <img class="z-0 absolute banderas" src="@/static/images/banderas.png" alt="">
+                <h1 class="z-10 absolute  subtexto">Venta de piezas de motor <br> y motores reconstruidos <br> en México y Estados unidos</h1>
+            </div>
+        </div>
         </div>
         
         </div>
-        <div class="hidden px-20 lg:flex items-center w-auto h-full">
-            <h1 class=" subtexto">Venta de motores y piezas de motor a nivel nacional</h1>
+        <!-- <div class="hidden    lg:flex items-center w-auto h-full">
+            <div class=" relative fondo-banderas">
+                <img class="z-0 absolute banderas" src="@/static/images/banderas.png" alt="">
+                <h1 class="z-10 absolute  subtexto">Venta de motores y piezas de motor.</h1>
+            </div>
+        </div> -->
+        <div class="hidden lg:block relative fondo-banderas">
+                <img class="z-0 absolute banderas" src="@/static/images/banderas.png" alt="">
+                <h1 class="z-10 absolute  subtexto">Venta de piezas de motor <br> y motores reconstruidos <br> en México y Estados unidos</h1>
         </div>
     </div>
+    
 </template>
 <script>
 export default {
