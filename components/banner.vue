@@ -17,14 +17,14 @@
                 Soluciones
             </a>
         </div>
-        <div class="text-center w-screen">
+        <!-- <div class="text-center w-screen">
             <div class="w-full h-auto text-center justify-center items-center pt-10 lg:hidden lg:w-auto relative ">
             <div class="fondo-banderas">
                 <img class="z-0 absolute banderas" src="@/static/images/banderas.png" alt="">
                 <h1 class="z-10 absolute  subtexto">Venta de piezas de motor <br> y motores reconstruidos <br> en México y Estados unidos</h1>
             </div>
         </div>
-        </div>
+        </div> -->
         
         </div>
         <!-- <div class="hidden    lg:flex items-center w-auto h-full">
@@ -33,10 +33,10 @@
                 <h1 class="z-10 absolute  subtexto">Venta de motores y piezas de motor.</h1>
             </div>
         </div> -->
-        <div class="hidden lg:block relative fondo-banderas">
+        <!-- <div class="hidden lg:block relative fondo-banderas">
                 <img class="z-0 absolute banderas" src="@/static/images/banderas.png" alt="">
                 <h1 class="z-10 absolute  subtexto">Venta de piezas de motor <br> y motores reconstruidos <br> en México y Estados unidos</h1>
-        </div>
+        </div> -->
     </div>
     
 </template>

@@ -6,8 +6,8 @@ body{
 .color-totalmotor{
     color: #DAA520;
 }
-.fondo-banderas{
-    width: 28vw;
+/* .fondo-banderas{
+    width: 36vw;
     height: 12vw;
     white-space: unset;
     position: absolute;
@@ -16,9 +16,15 @@ body{
     right: 10%;
     text-transform: uppercase;
 
+} */
+.fondo-banderas{
+    height: 18vw;
+    white-space: unset;
+    text-align: center;
+    text-transform: uppercase;
+
 }
 .banderas{
-    width: 22vw;
     left: 10%;
 }
 .border-tm{
@@ -46,10 +52,29 @@ border-radius: 0px;
   height: 100vh;
 
 }
+/* .subtexto{ en el banner
+    left: 20%;
+    top: 10%;
+    font-size: 1.8vw;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    color: black;
+  -webkit-text-fill-color: #DAA520; 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white; 
+
+} */
 .subtexto{
-    left: 10%;
-    top: 15%;
-    font-size: 1.5vw;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 520px;
+    height: 100px;
+    top: 0;
+    position: absolute;
+    font-size: 2.4vw;
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
     color: black;
@@ -253,6 +278,7 @@ border-radius: 5px;
 height: 60px;
 background-color: #DAA520;
 }
+
 .cuadro{
 
   transition: transform .5s ease-in-out;
@@ -336,16 +362,24 @@ border-radius: 5px;
     .cuadro-motores img{
     max-width: 300px;
 }
+.boton-contacto{
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+
+}
+
 .fondo-banderas{
-    width: 22rem;
+    width: auto;
     background-size: cover;
-    left: 5%;
     background-position: center;
     top: 80%;
+    height: 100%;
 
 }
 .banderas{
-    width: 80%;
+    width: 100%;
 }
 .cuadro-motor{
     width: auto;
@@ -366,10 +400,11 @@ border-radius: 5px;
     border-radius: 100%;
 }
 .subtexto{
-    display: flex;
-    font-size: 1rem;
+    font-size: 1.3rem;
+    width: 100%;
     padding: 1.5rem 22px;
     z-index: 0;
+    margin: auto;
 
 }
     .expertos{
