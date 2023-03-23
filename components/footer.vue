@@ -8,7 +8,7 @@
             <div class="iconos-redes text-center lg:text-left w-full lg:w-1/3">
                 <h2 class="text-white font-thin">Redes Sociales</h2>
                 <div class="flex pt-6 justify-center lg:justify-start space-x-10">
-                    <a target="_blank" href="https://www.facebook.com/EXPERTOSENMOTORES"><img class="redes" src="/images/Facebook.png" alt=""></a>
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100089995662990&mibextid=LQQJ4d"><img class="redes" src="/images/Facebook.png" alt=""></a>
                     <a target="_blank" href="https://www.instagram.com/total_motorsc/"><img class="redes" src="/images/Instagram.png" alt=""></a>
                 </div>
             </div>
