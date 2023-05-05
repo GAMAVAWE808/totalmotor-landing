@@ -225,6 +225,18 @@ line-height: 21px;
     width: 100%;
     height: 100%;
 }
+.cuadro-modal{
+
+    background-color: white;
+    margin: 20px 10px;
+    height: 100%;
+}
+
+.cuadro-modal img{
+    width: 100%;
+    height: 75%;
+    object-fit: contain;
+}
 .garantia-extendida{
     font-weight: 600;
     letter-spacing: 0.045em;
@@ -324,6 +336,7 @@ border-radius: 5px;
 .cuadro-motores img{
     max-width: 400px;
 }
+
 @media screen and (min-width:700px) and (max-width:1000px){
     .botones{
         text-align: center;

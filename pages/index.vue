@@ -15,6 +15,7 @@
   <Formulario/>
   <Footer/>
   <Botonwsp/>
+  <ModalMarcas/>
 </div>
 </template>
 <script>
