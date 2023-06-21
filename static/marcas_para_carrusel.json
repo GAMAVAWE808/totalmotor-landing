@@ -1,0 +1,60 @@
+[
+    {
+        "id":1,
+    "nombre":"chevrolet",
+    "imagenes":[
+        "/images/motores/motoresModal/chevrolet-1.jpeg",
+        "/images/motores/motoresModal/chevrolet-2.jpeg",
+        "/images/motores/motoresModal/chevrolet-3.jpeg",
+        "/images/motores/motoresModal/chevrolet-4.jpeg",
+        "/images/motores/motoresModal/chevrolet-5.jpeg"
+    ]
+    },
+    {
+        "id":2,
+    "nombre":"ford",
+    "imagenes":[
+        "/images/motores/motoresModal/ford-1.jpeg",
+        "/images/motores/motoresModal/ford-3.jpeg",
+        "/images/motores/motoresModal/ford-4.jpeg"
+    ]
+    },
+    {
+        "id":3,
+    "nombre":"jeep",
+    "imagenes":[
+        "/images/motores/motoresModal/jeep-1.jpeg"
+        
+    ]
+    },
+    {
+        "id":4,
+    "nombre":"dodge",
+    "imagenes":[
+        "/images/motores/motoresModal/dodge-1.jpeg",
+        "/images/motores/motoresModal/dodge-2.jpeg"
+    ]
+    },
+    {
+        "id":5,
+    "nombre":"land rover",
+    "imagenes":[
+        "/images/motores/motoresModal/land rover-1.jpeg"
+    ]
+    },
+    {
+        "id":6,
+    "nombre":"mercedes",
+    "imagenes":[
+        "/images/motores/motoresModal/mercedes-1.jpeg"
+    ]
+    },
+    {
+        "id":7,
+    "nombre":"audi",
+    "imagenes":[
+        "/images/motores/motoresModal/audi-1.jpeg"
+    ]
+    }
+    
+]

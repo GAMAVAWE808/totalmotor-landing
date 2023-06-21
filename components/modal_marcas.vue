@@ -6,7 +6,7 @@
           <span class="close" @click="closeModal()">&times;</span>
     <div>
         <carousel style="height: 90vh;"  perPage="1" paginationActiveColor="#DAA520" paginationColor="#C4C4C4">
-            <slide class="slide-modal" v-for="imagen in marca.imagenes" key="marca.id">
+            <slide class="slide-modal" v-for="imagen in marca.imagenes" key="imagen">
             <div class="cuadro-modal "><img class="imagen-cuadro-modal"  :src="imagen" alt=""></div>
             </slide>
         </carousel>
@@ -81,51 +81,75 @@
   
   <script>
   import { mapState, mapActions } from 'vuex'
-  import data from "static/json/marcas_para_carrusel.json"
   export default {
     computed: {
     ...mapState(['mostrar_modal_marca','marca_id']),
-    obtener_marca(){
-        
 
-        switch(this.marca_id){
-            case 1:
-                this.marca = this.marcas[0]
-                console.log("Si es igual a 1")
-                break;
-            case 2:
-                this.marca = this.marcas[1]
-                console.log("Si es igual a 2")
-                break;
-            case 3:
-                this.marca = this.marcas[2]
-                console.log("Si es igual a 1")
-                break;
-            case 4:
-                this.marca = this.marcas[3]
-                console.log("Si es igual a 2")
-                break;
-            case 5:
-                this.marca = this.marcas[4]
-                console.log("Si es igual a 1")
-                break;
-            case 6:
-                this.marca = this.marcas[5]
-                console.log("Si es igual a 2")
-                break;
-            case 7:
-                this.marca = this.marcas[6]
-                console.log("Si es igual a 2")
-                break;
-        }
-        
-    }
   },
     data() {
       return {
         showModal:false,
         marca:{},
-    marcas:data
+    marcas:[
+    {
+        "id":1,
+    "nombre":"chevrolet",
+    "imagenes":[
+        "/images/motores/chevrolet-1.jpeg",
+        "/images/motores/chevrolet-2.jpeg",
+        "/images/motores/chevrolet-3.jpeg",
+        "/images/motores/chevrolet-4.jpeg",
+        "/images/motores/chevrolet-5.jpeg"
+    ]
+    },
+    {
+        "id":2,
+    "nombre":"ford",
+    "imagenes":[
+        "/images/motores/ford-1.jpeg",
+        "/images/motores/ford-3.jpeg",
+        "/images/motores/ford-4.jpeg"
+    ]
+    },
+    {
+        "id":3,
+    "nombre":"jeep",
+    "imagenes":[
+        "/images/motores/jeep-1.jpeg"
+        
+    ]
+    },
+    {
+        "id":4,
+    "nombre":"dodge",
+    "imagenes":[
+        "/images/motores/dodge-1.jpeg",
+        "/images/motores/dodge-2.jpeg"
+    ]
+    },
+    {
+        "id":5,
+    "nombre":"land rover",
+    "imagenes":[
+        "/images/motores/land rover-1.jpeg"
+    ]
+    },
+    {
+        "id":6,
+    "nombre":"mercedes",
+    "imagenes":[
+        "/images/motores/mercedes-1.jpeg"
+    ]
+    },
+    {
+        "id":7,
+    "nombre":"audi",
+    "imagenes":[
+        "/images/motores/audi-1.jpeg"
+    ]
+    }
+    
+]
 
       }
     },
@@ -134,8 +158,24 @@
     closeModal() {
       this.SET_MOSTRAR_MODAL_MARCA(false)
     },
+    setMarca(valor){
+      let indice = this.marcas.findIndex(x=> x.id == valor)
+      if (indice != -1){
+        this.marca = this.marcas[indice]
+      }
+      
+    }
 
     },
-    
+
+  watch: {
+    marca_id:{
+      handler(nuevoValor){
+        console.log('El valor de miVariable ha cambiado:', nuevoValor);
+        this.setMarca(nuevoValor)
+      },
+      inmediate:true
+    }
+  },
     }
   </script>

@@ -1,5 +1,5 @@
 export const state = () => ({
-    marca_id: null,
+    marca_id: 1,
     mostrar_modal_marca:false
   })
 

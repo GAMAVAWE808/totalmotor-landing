@@ -8,7 +8,6 @@
   <Iconos/>
   <GarantiaExtendida/>
   <Marcas/>
-  <SliderBlack/>
     <Motores/>
   <Iconosoro/>
   <Maps/>
