@@ -8,13 +8,13 @@
   <Iconos/>
   <GarantiaExtendida/>
   <Marcas/>
-  <SliderBlack/>
     <Motores/>
   <Iconosoro/>
   <Maps/>
   <Formulario/>
   <Footer/>
   <Botonwsp/>
+  <ModalMarcas/>
 </div>
 </template>
 <script>
